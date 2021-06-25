@@ -1,7 +1,6 @@
 import React from 'react';
 import {Grid} from '@material-ui/core';
 import {Link} from 'react-router-dom'
-import {FaGithub, FaEnvelope, FaLinkedin, FaInstagram} from "react-icons/fa"
 import '../App.css'
 
 function Footer() {

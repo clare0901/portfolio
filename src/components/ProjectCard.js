@@ -1,7 +1,9 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import {Link} from 'react-router-dom'
 import { Paper } from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const useStyles = makeStyles((theme)=>({
     
@@ -39,11 +41,14 @@ const useStyles = makeStyles((theme)=>({
 }))
 
 function ProjectCard(props) {
-    // console.log(props)
+
+    useEffect(()=>{
+        AOS.init({duration:1000})  
+    },[])
 
     const classes = useStyles();
     return(
-        <Link to={{ pathname: `${props.value.html_url}` }} target="_blank" style={{textDecoration:"none"}}>
+        <Link to={{ pathname: `${props.value.html_url}` }} target="_blank" style={{textDecoration:"none"}}  data-aos='fade-up'>
             <Paper elevation={5} className={classes.root}>
                 <h3 className={classes.projecttitle}>{props.value.name}</h3>
                 <p className={classes.description}>{props.value.description}</p>

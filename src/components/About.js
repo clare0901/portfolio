@@ -33,7 +33,6 @@ function About(){
                             <Col className="" sm={12}>
                                 <div>
                                 { skills.map((item,key) => {
-                                    // console.log("key",key)
                                     return( 
                                         <>
                                             <h5 className="skills-title">{item.name}</h5>

@@ -32,15 +32,15 @@ export const skills = [
 
 export const WorkData = [
     {
-        title: "PHP Developer",
-        desc: "lorksdlksdlmdlmsl",
-        year:"2021",
-        duration:"02 Months"
+        title: "Technical Executive at IEEE",
+        desc: "Handles the technical events in a team that happen at SFIT in IEEE.",
+        year:"20-21",
+        duration:"Currently"
     },
     {
-        title: "SQL Developer",
-        desc: "lorksdlksdlmdlmsl",
-        year:"2020",
-        duration:"04 Months"
+        title: "PHP Developer",
+        desc: "During this internship I was alloted to work on a Track & Search App which helps people nationwide to add the details of a lost person and this information is passed to an AI model which helps to track the person. If the person is found you can update the status of that person on the website. Proper Authentication was done. Users were authorised, checked using Captcha and confirmation emails were sent using the PHP mail server. The database used for this project was MYSQL. I was able to learn a lot about hashing techniques during this course of time.",
+        year:"2021",
+        duration:"03 Months"
     }
 ]

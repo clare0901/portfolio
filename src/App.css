@@ -19,9 +19,8 @@
 
 body::-webkit-scrollbar {
   width: .6em;
-  
 }
- 
+
 body::-webkit-scrollbar-track {
   background-color:rgb(20, 20, 20);
 }
@@ -29,24 +28,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color:#e0c5e2;
   border-radius: 8px;
-  /* height: 0.6px; */
 }
-/* 
-.timeline-container::-webkit-scrollbar {
-  width: .6em;
-  height: 1em;
-}
- 
-.timeline-container::-webkit-scrollbar-track {
-  background-color:rgb(20, 20, 20);
-}
- 
-.timeline-container::-webkit-scrollbar-thumb {
-  background-color:#e0c5e2;
-  border-radius: 8px;
-  height: 1px;
-} */
-
 
 /* scroll style ends here */
 
@@ -145,7 +127,30 @@ li {
   /* background-repeat: no-repeat; */
   background-size: cover;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
+}
+
+.home-page-icons{
+  position: absolute;
+  left: 25%;
+  top: 70%;
+  font-size: 25px;
+  border-top: 2px solid rgba(0, 0, 0, 0.911);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.911);
+  border-style:dotted;
+  border-left: none;
+  border-right: none;
+  width: 150px;
+  padding: 2px 0px 5px 0px; 
+}
+
+.github, .linkedin, .codechef{
+  color: black;
+  margin-right: 25px;
+} 
+
+.github:hover, .linkedin:hover, .codechef:hover{
+  color: #232323;
 }
 
 .main-div {
@@ -355,6 +360,8 @@ li {
 
 /* Timeline starts here */
 
+
+/* main div */
 .timeline-container{
   background: url('./images/6.jpg');
   background-attachment: fixed;
@@ -366,14 +373,12 @@ li {
   /* padding: 0 0 80px 0; */
 }
 
+
+/* main container */
 .main-timeline {
   position: relative;
   background-color: rgba(0, 0, 0, 0.767);
   padding: 20px;
-}
-
-.work-data{
-  margin: 70px 100px 100px 100px;
 }
 
 .main-timeline:before {
@@ -389,6 +394,10 @@ li {
   right: 0;
 }
 
+.work-data{
+  margin: 70px 100px 100px 100px;
+}
+
 .main-timeline .timeline {
   margin-bottom: 40px;
   position: relative;
@@ -400,16 +409,17 @@ li {
   clear: both;
 }
 
+/* the golus on the main | line */
 .main-timeline .icon {
   overflow-x: visible;
   width: 18px;
   height: 18px;
   line-height: 18px;
-  margin: auto;
+  margin: 80px auto auto auto;
   position: absolute;
   top: 0;
   left: 0;
-  bottom: -30px;
+  bottom: 0;
   right: 0;
 }
 
@@ -538,13 +548,14 @@ li {
   font-size: 19px;
   font-weight: 700;
   line-height: 24px;
-  margin: 15px 0 5px 0;
+  margin: 15px 0 0 0;
   color:#be4c9c;;
 }
 
 .main-timeline .description {
   margin-bottom: 0;
   color: white;
+  line-height: 1.5;
 }
 
 .break-line{
@@ -558,6 +569,7 @@ li {
   }
   .main-timeline .icon {
     left: 1px;
+    margin-top: 88px;
   }
   .main-timeline .date-content {
     margin-top: 35px;
@@ -572,6 +584,7 @@ li {
     font-size: 17px;
     margin-top: 45px;
   }
+  
 }
 
 @media only screen and (max-width: 767px) {
@@ -583,7 +596,7 @@ li {
     left: 40px;
   }
   .main-timeline .timeline {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   .main-timeline .icon {
     margin: auto 0;
@@ -618,7 +631,10 @@ li {
     padding: 10px 0;
   }
   .main-timeline .work_title {
-    margin-bottom: 10px;
+    margin: 10px 0px 0px 0px;
+  }
+  .main-timeline .description {
+    margin: 0px 20px 0px 20px;
   }
 }
 
