@@ -9,8 +9,8 @@ const useStyles = makeStyles((theme)=>({
         textAlign: 'center',
         margin: "50px 20px 20px 20px",
         backgroundColor: "#2A1F3D",
-        width: theme.spacing(56),
-        height: theme.spacing(20),
+        width: theme.spacing(40),
+        height: theme.spacing(22),
         color: "white",
         opacity:0.8,
         '&:hover': {

@@ -20,8 +20,6 @@ function About(){
                             <Col className="my-picture-col" lg={true} >
                                 <img
                                     className="my-picture"
-                                    width="335px"
-                                    height="400px"
                                     src={Picture}
                                     alt="My profile"
                                 />

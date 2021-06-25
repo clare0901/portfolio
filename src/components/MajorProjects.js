@@ -1,7 +1,6 @@
 import React from 'react'
 import ProjectCard from './ProjectCard.js';
 import {Data} from '../Data'
-import {Link} from 'react-router-dom'
 import '../App.css';
 
 import {makeStyles} from '@material-ui/core/styles'
@@ -32,11 +31,6 @@ function MajorProjects() {
             )
           })}
         </div>
-          
-        {/* <div className="view-all-div">
-          <Link to='/projects' className="view-all-link">View All</Link>
-        </div> */}
-        
       </div>
     </>
   );

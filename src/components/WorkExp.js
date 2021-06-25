@@ -9,7 +9,7 @@ function WorkExp() {
     return (
         <>
             <div className="timeline-container">
-                <h1 className="page-title">Work Experience</h1>
+                <h1 className="page-title">Work <br className="break-line"/> Experience</h1>
                 <div className="work-data">
                     {WorkData.map((item, key) => {
                         return (<Timeline value={item} key={key} />)
