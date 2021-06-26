@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const variants = {
   open: {
     y: 0,
     opacity: 1,
-    display:"relative",
+    display: "relative",
     transition: {
       y: { stiffness: 1000, velocity: -100 }
     }
@@ -20,20 +20,19 @@ const variants = {
   }
 };
 
-const colors = ["#F56362","#FED978", "#90CBFB", "#FEA443", "#D9998B"];
+const colors = ["#F56362", "#FED978", "#90CBFB", "#FEA443", "#D9998B"];
 
-const value = ['Home','About', 'Projects', 'Work Experience', 'My Resume']
+const value = ['Home', 'About', 'Projects', 'Work Experience', 'My Resume']
 
 const links = ['/', '/about', '/projects', '/work-experience']
 
-const target= ['_self','_self', '_self', '_self', '_blank']
+const target = ['_self', '_self', '_self', '_self', '_blank']
 
 export const MenuItem = ({ i }) => {
   const style = { border: `2px solid ${colors[i]}` };
-  const text_style = { border: `2px solid ${colors[i]}`};
+  const text_style = { border: `2px solid ${colors[i]}` };
   return (
-    
-    <Link to={ i===4 ? {pathname:"https://drive.google.com/file/d/1CtiAHqPGLDguRri0JrZg7VMlOjEhesHK/view?usp=sharing"} : links[i] } target={target[i]} style={{textDecoration: "none"}}>
+    <Link to={i === 4 ? { pathname: "https://drive.google.com/file/d/1CtiAHqPGLDguRri0JrZg7VMlOjEhesHK/view?usp=sharing" } : links[i]} target={target[i]} style={{ textDecoration: "none" }}>
       <motion.li
         variants={variants}
         whileHover={{ scale: 1.1 }}

@@ -1,10 +1,8 @@
-import React,{useEffect,useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import ProjectCard from './ProjectCard.js';
 import '../App.css';
 import NavButton from './NavButton';
 import Footer from './Footer';
-
-
 import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles(() => ({
@@ -16,8 +14,8 @@ const useStyles = makeStyles(() => ({
         boxSizing: "inherit"
     }
 }))
-function Projects() {
 
+function Projects() {
     const classes = useStyles();
     const [repo, setRepos] = useState();
 

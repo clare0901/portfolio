@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Timeline(props){
-    return(
+function Timeline(props) {
+    return (
         <>
             <div className="main-timeline">
                 <div className="timeline">

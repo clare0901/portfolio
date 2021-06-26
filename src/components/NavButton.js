@@ -28,7 +28,7 @@ function NavButton() {
     const [isOpen, toggleOpen] = useCycle(false, true);
     const containerRef = useRef(null);
     const { height } = useDimensions(containerRef);
-    
+
     return (
         <motion.nav
             initial={false}
@@ -37,7 +37,7 @@ function NavButton() {
             ref={containerRef}
         >
             <motion.div className="background" variants={sidebar} />
-            <Navigation/>
+            <Navigation />
             <MenuToggle toggle={() => toggleOpen()} />
         </motion.nav>
     )

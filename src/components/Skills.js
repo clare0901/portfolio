@@ -1,8 +1,7 @@
 import React from 'react';
-import {makeStyles} from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles'
 
-
-const useStyles = makeStyles(()=>({
+const useStyles = makeStyles(() => ({
     root: {
         color: "white",
         border: "2px solid #A500EA",
@@ -11,20 +10,25 @@ const useStyles = makeStyles(()=>({
         display: "inline-block",
         marginRight: "12px",
         textAlign: "center",
-        borderRadius: "10px"
+        borderRadius: "10px",
+        '&:hover': {
+            backgroundColor: "#e0c5e2",
+            color: "black",
+            fontWeight: "bold"
+        }
     },
 }))
 
-function Skills(props){
+function Skills(props) {
     const classes = useStyles();
-    
-    return(
+
+    return (
         <div>
             {props.value.map(item => {
-                return(
+                return (
                     <p className={classes.root}>{item}</p>
                 )
-            } )}
+            })}
         </div>
     )
 }
