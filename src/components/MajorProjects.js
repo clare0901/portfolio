@@ -1,34 +1,37 @@
-import React, {useEffect, useState} from 'react'
-import ProjectCard from './ProjectCard.tsx';
-import data from '../Data'
+import React from 'react'
+import ProjectCard from './ProjectCard.js';
+import { Data } from '../Data'
+import { makeStyles } from '@material-ui/core/styles'
 import '../App.css';
 
-function MajorProjects() {
-
-    const repos = data
-    console.log(repos)
-
-    // useEffect(()=>{
-    //   try{
-    //     fetch("https://api.github.com/users/clare0901/repos")
-    //     .then( (response => response.json()) )
-    //     .then( response => { console.log(response)})
-    //   }catch(error){
-    //     console.log("Error", error)
-    //   }
-    // })
-
-
-    return (
-      <>
-        <div className="major-projects-div">
-          <h1 className="major-projects-title">Major Projects</h1>
-          {/* {repos.map(item=>
-            <ProjectCard key={item.name} value={item} />
-          )} */}
-        </div>
-      </>
-    );
+const useStyles = makeStyles(() => ({
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    textAlign: "center",
+    justifyContent: "center",
+    boxSizing: "inherit"
   }
+}))
+
+function MajorProjects() {
+  const classes = useStyles();
+  return (
+    <>
+      <div className="major-projects-div">
+        <h1 className="page-title">Major Projects</h1>
+        <div className={classes.root}>
+          {Data.map((item, key) => {
+            return (
+              <>
+                <ProjectCard value={item} key={key} />
+              </>
+            )
+          })}
+        </div>
+      </div>
+    </>
+  );
+}
 
 export default MajorProjects;
