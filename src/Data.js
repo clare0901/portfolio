@@ -1,5 +1,5 @@
 export const Data = [
-    { "name": "login-register-template-react", "html_url": "https://github.com/clare0901/login-register-template-react", "description": "Basic Login &amp; Register template using React and Firebase Auth.", "language": "JavaScript", "stars": 0, "forks": 0 },
+    { "name": "login-register-template-react", "html_url": "https://github.com/clare0901/login-register-template-react", "description": "Basic Login & Register template using React and Firebase Auth.", "language": "JavaScript", "stars": 0, "forks": 0 },
     { "name": "paint-app-react", "html_url": "https://github.com/clare0901/paint-app-react", "description": "A Paint App created using React.", "language": "JavaScript", "stars": 0, "forks": 0 },
     { "name": "todolist-app-react", "html_url": "https://github.com/clare0901/todolist-app-react", "description": "A TodoList App made using React which has Add and Delete task functionality.", "language": "JavaScript", "stars": 0, "forks": 0 },
     { "name": "calculator-app-react", "html_url": "https://github.com/clare0901/calculator-app-react", "description": "A basic calculator made using React wherein you can do simple math calculations.", "language": "JavaScript", "stars": 0, "forks": 0 },
