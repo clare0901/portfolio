@@ -43,9 +43,9 @@ function Footer() {
                         </li>
 
                         <li>Email &minus;
-                            <a className="footer-link">
+                            <span className="footer-link">
                                 clarerebello0901@gmail.com
-                            </a>
+                            </span>
                         </li>
 
                         <li>Codechef &minus;

@@ -17,20 +17,18 @@ const useStyles = makeStyles(() => ({
 function MajorProjects() {
   const classes = useStyles();
   return (
-    <>
       <div className="major-projects-div">
         <h1 className="page-title">Major Projects</h1>
         <div className={classes.root}>
           {Data.map((item, key) => {
             return (
               <>
-                <ProjectCard value={item} key={key} />
+                <ProjectCard key={item.name} value={item} />
               </>
             )
           })}
         </div>
       </div>
-    </>
   );
 }
 

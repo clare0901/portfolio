@@ -46,7 +46,7 @@ function About() {
                                             return (
                                                 <>
                                                     <h5 className="skills-title">{item.name}</h5>
-                                                    <Skills value={item.value} key={item.name} />
+                                                    <Skills key={item.name} value={item.value} />
                                                 </>
                                             )
                                         })}
