@@ -23,7 +23,7 @@ function Footer() {
                             <Link className="footer-internal-link" to="/work-experience">Work Experience</Link>
                         </li>
                         <li>
-                            <Link className="footer-internal-link" to={{ pathname: "https://drive.google.com/file/d/1CtiAHqPGLDguRri0JrZg7VMlOjEhesHK/view?usp=sharing" }} target="_blank">My Resume</Link>
+                            <a href="https://drive.google.com/file/d/1CtiAHqPGLDguRri0JrZg7VMlOjEhesHK/view?usp=sharing" rel="noopener noreferrer" className="footer-internal-link" target="_blank">My Resume</a>
                         </li>
                     </ul>
                 </Grid>
@@ -31,15 +31,15 @@ function Footer() {
                     <ul>
                         <p className="footer-title">Let's Connect</p>
                         <li>Github &minus;
-                            <Link className="footer-link" to={{ pathname: 'https://github.com/clare0901' }} target="_blank">
+                            <a href="https://github.com/clare0901" className="footer-link" target="_blank" rel="noopener noreferrer">
                                 https://github.com/clare0901
-                            </Link>
+                            </a>
                         </li>
 
                         <li>LinkedIn &minus;
-                            <Link className="footer-link" to={{ pathname: 'https://www.linkedin.com/in/clarerebello-2001/' }} target="_blank">
+                            <a href="https://www.linkedin.com/in/clarerebello-2001/" className="footer-link" target="_blank" rel="noopener noreferrer">
                                 https://www.linkedin.com/in/clarerebello-2001/
-                            </Link>
+                            </a>
                         </li>
 
                         <li>Email &minus;
@@ -49,15 +49,15 @@ function Footer() {
                         </li>
 
                         <li>Codechef &minus;
-                            <Link className="footer-link" to={{ pathname: 'https://www.codechef.com/users/clare09' }} target="_blank">
+                            <a href="https://www.codechef.com/users/clare09" className="footer-link" target="_blank" rel="noopener noreferrer">
                                 https://www.codechef.com/users/clare09
-                            </Link>
+                            </a>
                         </li>
 
                         <li>HackerRank &minus;
-                            <Link className="footer-link" to={{ pathname: 'https://www.hackerrank.com/clare2001' }} target="_blank">
+                            <a href="https://www.hackerrank.com/clare2001'" className="footer-link" target="_blank" rel="noopener noreferrer">
                                 https://www.hackerrank.com/clare2001
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                 </Grid>

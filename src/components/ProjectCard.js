@@ -70,15 +70,15 @@ function ProjectCard(props) {
 
     const classes = useStyles();
     return (
-        <Link to={{ pathname: `${props.value.html_url}` }} target="_blank" style={{ textDecoration: "none", overflow: "hidden" }} data-aos='fade-up'>
-            <Paper elevation={5} className={classes.root}>
+        <Paper elevation={5} className={classes.root}>
+            <a href={props.value.html_url} target="_blank" style={{ textDecoration: "none", overflow: "hidden", color:"white" }} data-aos='fade-up'>
                 <h3 className={classes.projecttitle}>{props.value.name}</h3>
-                <p className={classes.description}>{props.value.description}</p>
-                {props.value.language && <p className={classes.language}>{props.value.language}</p>}
-                <p className={classes.projectlink}>{props.value.homepage && <Link to={{ pathname: `${props.value.homepage}` }} style={{ textDecoration: "none", color: "white" }} ><BiLink /></Link>}</p>
-                {/* <p>{color[props.value.language]} <span>{props.value.language}</span></p> */}
-            </Paper>
-        </Link>
+            </a>
+            <p className={classes.description}>{props.value.description}</p>
+            {props.value.language && <p className={classes.language}>{props.value.language}</p>}
+            <p className={classes.projectlink}>{props.value.homepage && <a href={props.value.homepage} target="_blank" style={{ textDecoration: "none", color: "white" }} ><BiLink /></a>}</p>
+            {/* <p>{color[props.value.language]} <span>{props.value.language}</span></p> */}
+        </Paper>
     )
 }
 

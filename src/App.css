@@ -48,6 +48,7 @@ nav {
   bottom: 0;
   width: 300px;
 }
+
 .background {
   position: fixed;
   top: 0;
@@ -55,6 +56,13 @@ nav {
   bottom: 0;
   width: 300px;
   background: rgba(0, 0, 0, 0.781);
+  z-index:1;
+}
+
+@media only screen and (max-width: 1280px ){
+  .background{
+    background:black;
+  }
 }
 
 button {
@@ -71,12 +79,14 @@ button {
   right: 10px;
   width: 60px;
   height: 60px;
+  z-index:1;
 }
 
 ul,
 li {
   margin: 0;
   padding: 0;
+  z-index:1;
 }
 
 ul {
@@ -323,6 +333,7 @@ li {
 
 /* main container */
 .main-timeline {
+  border-radius: 10px;
   position: relative;
   background-color: rgba(0, 0, 0, 0.767);
   padding: 20px;
@@ -593,6 +604,18 @@ li {
   }
 }
 
+
+@media only screen and (max-width: 530px) {
+  .main-timeline .work_title{
+    margin:0 10px 0 10px;
+    width:100%
+  }
+  .description{
+    padding:0 10px 0 10px;
+    text-align:center;
+  }
+}
+
 /* Timeline ends here */
 
 /* Footer */
@@ -651,7 +674,7 @@ li {
 .copyright {
   text-align: center;
   color: #e0c5e2;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 @media only screen and (max-width: 991px) {

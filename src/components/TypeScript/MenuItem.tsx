@@ -26,13 +26,15 @@ const value = ['Home', 'About', 'Projects', 'Work Experience', 'My Resume']
 
 const links = ['/', '/about', '/projects', '/work-experience']
 
-const target = ['_self', '_self', '_self', '_self', '_blank']
+// const target = ['_self', '_self', '_self', '_self', '_blank']
 
 export const MenuItem = ({ i }) => {
   const style = { border: `2px solid ${colors[i]}` };
   const text_style = { border: `2px solid ${colors[i]}` };
+
   return (
-    <Link to={i === 4 ? { pathname: "https://drive.google.com/file/d/1CtiAHqPGLDguRri0JrZg7VMlOjEhesHK/view?usp=sharing" } : links[i]} target={target[i]} style={{ textDecoration: "none" }}>
+    i!==4 ?
+    <Link to={links[i]} style={{ textDecoration: "none" }}>
       <motion.li
         variants={variants}
         whileHover={{ scale: 1.1 }}
@@ -41,7 +43,18 @@ export const MenuItem = ({ i }) => {
         <div className="icon-placeholder" style={style} />
         <div className="text-placeholder" style={text_style}>{value[i]}</div>
       </motion.li>
-    </Link>
+    </Link> :
+    <a href="https://drive.google.com/file/d/1CtiAHqPGLDguRri0JrZg7VMlOjEhesHK/view?usp=sharing" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none" }}>
+      <motion.li
+        variants={variants}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <div className="icon-placeholder" style={style} />
+        <div className="text-placeholder" style={text_style}>{value[i]}</div>
+      </motion.li>
+    </a>
 
   );
 };
+
