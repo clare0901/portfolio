@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 // import {useState} from 'react';
-import { Link } from 'react-router-dom'
 import { Paper } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles'
 import { BiLink } from "react-icons/bi";
@@ -70,8 +69,8 @@ function ProjectCard(props) {
 
     const classes = useStyles();
     return (
-        <Paper elevation={5} className={classes.root}>
-            <a href={props.value.html_url} target="_blank" style={{ textDecoration: "none", overflow: "hidden", color:"white" }} data-aos='fade-up'>
+        <Paper elevation={5} className={classes.root} data-aos='fade-up'>
+            <a href={props.value.html_url} target="_blank" style={{ textDecoration: "none", overflow: "hidden", color:"white" }}>
                 <h3 className={classes.projecttitle}>{props.value.name}</h3>
             </a>
             <p className={classes.description}>{props.value.description}</p>
