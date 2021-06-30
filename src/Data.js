@@ -33,7 +33,7 @@ export const skills = [
 export const WorkData = [
     {
         title: "Technical Executive at IEEE",
-        desc: "Handles the technical events in a team that happen at SFIT in IEEE.",
+        desc: "Handles the technical events that happen in IEEE, SFIT in a team.",
         year: "20-21",
         duration: "Currently"
     },
