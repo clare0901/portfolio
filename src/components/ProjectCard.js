@@ -70,12 +70,12 @@ function ProjectCard(props) {
     const classes = useStyles();
     return (
         <Paper elevation={5} className={classes.root} data-aos='fade-up'>
-            <a href={props.value.html_url} target="_blank" style={{ textDecoration: "none", overflow: "hidden", color:"white" }}>
+            <a href={props.value.html_url} target="_blank" style={{ textDecoration: "none", overflow: "hidden", color:"white" }} rel="noopener noreferrer" >
                 <h3 className={classes.projecttitle}>{props.value.name}</h3>
             </a>
             <p className={classes.description}>{props.value.description}</p>
             {props.value.language && <p className={classes.language}>{props.value.language}</p>}
-            <p className={classes.projectlink}>{props.value.homepage && <a href={props.value.homepage} target="_blank" style={{ textDecoration: "none", color: "white" }} ><BiLink /></a>}</p>
+            <p className={classes.projectlink}>{props.value.homepage && <a href={props.value.homepage} target="_blank" style={{ textDecoration: "none", color: "white" }}  rel="noopener noreferrer" ><BiLink /></a>}</p>
             {/* <p>{color[props.value.language]} <span>{props.value.language}</span></p> */}
         </Paper>
     )
