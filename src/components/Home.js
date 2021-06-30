@@ -40,13 +40,13 @@ function Home() {
           </div>
           <div className="home-page-icons-div">
             <div className="home-page-icons" data-aos="flip-down">
-              <a href="https://github.com/clare0901" target="_blank">
+              <a href="https://github.com/clare0901" target="_blank" rel="noopener noreferrer" >
                 <FaGithub className="github" />
               </a>
-              <a href="https://www.linkedin.com/in/clarerebello-2001/" target="_blank">
+              <a href="https://www.linkedin.com/in/clarerebello-2001/" target="_blank" rel="noopener noreferrer" >
                 <FaLinkedinIn className="linkedin" />
               </a>
-              <a href="https://www.codechef.com/users/clare09" target="_blank">
+              <a href="https://www.codechef.com/users/clare09" target="_blank" rel="noopener noreferrer" >
                 <SiCodechef className="codechef" />
               </a>
             </div>
