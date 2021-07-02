@@ -33,7 +33,7 @@ function Projects() {
         <>
             <div className="major-projects-div">
                 <h1 className="page-title">Projects</h1>
-                <div className={classes.root}>
+                <div className={classes.root} style={{overflow:"hidden"}}>
                     {repo && repo.map((item, key) => {
                         return (<ProjectCard value={item} key={key} />)
                     })}

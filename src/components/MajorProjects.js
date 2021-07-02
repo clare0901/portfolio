@@ -19,7 +19,7 @@ function MajorProjects() {
   return (
       <div className="major-projects-div">
         <h1 className="page-title">Major Projects</h1>
-        <div className={classes.root}>
+        <div className={classes.root} style={{overflow:"hidden"}}>
           {Data.map((item, key) => {
             return (
               <>
