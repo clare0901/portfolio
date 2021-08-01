@@ -32,7 +32,7 @@ export const skills = [
 
 export const WorkData = [
     {
-        title: "Machine Learning & Artificial Intelligence Intern at KubixSquare",
+        title: "ML & AI Intern at KubixSquare",
         desc: "",
         year: "2021",
         duration: "Currently"
