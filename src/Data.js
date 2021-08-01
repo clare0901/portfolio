@@ -45,7 +45,7 @@ export const WorkData = [
     },
     {
         title: "PHP Developer at Shining Tomorrow Foundation",
-        desc: "During this internship I was alloted to work on a Track & Search App which helps people nationwide to add the details of a lost person and this information is passed to an AI model which helps to track the person. If the person is found you can update the status of that person on the website. Proper Authentication was done. Users were authorised, checked using Captcha and confirmation emails were sent using the PHP mail server. The database used for this project was MYSQL. I was able to learn a lot about hashing techniques during this course of time.",
+        desc: "During this course of internship I was alloted to work on a Track & Search App which helps people nationwide to add the details of a lost person.",
         year: "2021",
         duration: "02 Months"
     }
