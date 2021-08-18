@@ -32,8 +32,14 @@ export const skills = [
 
 export const WorkData = [
     {
-        title: "ML & AI Intern at KubixSquare",
+        title: "Software Research and Development Intern at A2D Innovations Pvt. Ltd",
         desc: "",
+        year: "2021",
+        duration: "Currently"
+    },
+    {
+        title: "ML & AI Intern at KubixSquare",
+        desc: "Working on How to Implement Amazon FBA product search analysis using ML/AI.",
         year: "2021",
         duration: "Currently"
     },
