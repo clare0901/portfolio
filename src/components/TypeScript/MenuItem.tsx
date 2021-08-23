@@ -44,7 +44,7 @@ export const MenuItem = ({ i }) => {
         <div className="text-placeholder" style={text_style}>{value[i]}</div>
       </motion.li>
     </Link> :
-    <a href="https://drive.google.com/file/d/1Ji57_vi2Va3ZZyQgUsyW9ml0r5aCJZ26/view?usp=sharing" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none" }}>
+    <a href="https://drive.google.com/file/d/1M8dmiYR8M0j0moCMGATT94IzfzWuGbxR/view?usp=sharing" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none" }}>
       <motion.li
         variants={variants}
         whileHover={{ scale: 1.1 }}
