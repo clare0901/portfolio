@@ -21,7 +21,7 @@ export const skills = [
         value: ['git', 'npm']
     },
     {
-        name: "Technologies",
+        name: "Technologie",
         value: ['Github', 'Github Pages', 'Firebase']
     },
     {
