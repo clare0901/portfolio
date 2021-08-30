@@ -23,7 +23,7 @@ function Footer() {
                             <Link className="footer-internal-link" to="/work-experience">Work Experience</Link>
                         </li>
                         <li>
-                            <a href="https://drive.google.com/file/d/1M8dmiYR8M0j0moCMGATT94IzfzWuGbxR/view?usp=sharing" rel="noopener noreferrer" className="footer-internal-link" target="_blank">My Resume</a>
+                            <a href="https://drive.google.com/file/d/1ybTGiQqSWw16tzhyulp5efhzIFpV-Ngd/view?usp=sharing" rel="noopener noreferrer" className="footer-internal-link" target="_blank">My Resume</a>
                         </li>
                     </ul>
                 </Grid>
