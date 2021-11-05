@@ -153,14 +153,14 @@ li {
 
 .github,
 .linkedin,
-.codechef {
+.hackerrank {
   color: black;
   margin-right: 25px;
 }
 
 .github:hover,
 .linkedin:hover,
-.codechef:hover {
+.hackerrank:hover {
   color: #232323;
 }
 

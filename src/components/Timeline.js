@@ -15,7 +15,9 @@ function Timeline(props) {
                         </div>
                     </div>
                     <div className="timeline-content">
-                        <h5 className="work_title">{props.value.title}</h5>
+                        <a href={props.value.link} style={{textDecoration:"none"}} target="_blank" rel="noopener noreferrer" >
+                          <h5 className="work_title">{props.value.title}</h5>
+                        </a>
                         <p className="description">
                             {props.value.desc}
                         </p>

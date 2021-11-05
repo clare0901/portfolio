@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-// import {useState} from 'react';
 import { Paper } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles'
 import { BiLink } from "react-icons/bi";
@@ -10,14 +9,14 @@ const useStyles = makeStyles((theme) => ({
     root: {
         textAlign: 'center',
         margin: "50px 20px 20px 20px",
-        backgroundColor: "#2A1F3D",
+        backgroundColor: "#D4B5B0",
         width: theme.spacing(40),
         height: theme.spacing(25),
-        color: "white",
+        color: "#383E56",
         overflow: "hidden",
         opacity: 0.8,
         '&:hover': {
-            backgroundColor: "#3a2d52",
+            backgroundColor: "#EEDAD1",
         },
     },
     projecttitle: {
@@ -26,11 +25,11 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "left",
         padding: "12px",
         margin: "0px",
-        fontSize: "20px",
+        fontSize: "18px",
         fontFamily: "Times New Roman"
     },
     description: {
-        fontSize: "16px",
+        fontSize: "15px",
         fontFamily: "Times New Roman",
         opacity: 1,
         textAlign: "left",
@@ -40,16 +39,17 @@ const useStyles = makeStyles((theme) => ({
     },
     projectlink: {
         paddingLeft: "12px",
-        fontSize: "18px",
+        fontSize: "14px",
         textAlign: "left",
         marginTop: "-2px"
     },
     language: {
         float: "left",
+        fontSize:"13px",
         paddingLeft: "12px",
         display: "block",
         textAlign: "left",
-        color: "lightblue"
+        color: "#383E56"
     }
 }))
 
@@ -70,12 +70,13 @@ function ProjectCard(props) {
     const classes = useStyles();
     return (
         <Paper elevation={5} className={classes.root} data-aos='fade-up'>
-            <a href={props.value.html_url} target="_blank" style={{ textDecoration: "none", overflow: "hidden", color:"white" }} rel="noopener noreferrer" >
+            <a href={props.value.html_url} target="_blank" style={{ textDecoration: "none", overflow: "hidden", color:"#383E56" }} rel="noopener noreferrer" >
                 <h3 className={classes.projecttitle}>{props.value.name}</h3>
             </a>
             <p className={classes.description}>{props.value.description}</p>
+
             {props.value.language && <p className={classes.language}>{props.value.language}</p>}
-            <p className={classes.projectlink}>{props.value.homepage && <a href={props.value.homepage} target="_blank" style={{ textDecoration: "none", color: "white" }}  rel="noopener noreferrer" ><BiLink /></a>}</p>
+            <p className={classes.projectlink}>{props.value.homepage && <a href={props.value.homepage} target="_blank" style={{ textDecoration: "none", color: "#F69E7B" }}  rel="noopener noreferrer" ><BiLink /></a>}</p>
             {/* <p>{color[props.value.language]} <span>{props.value.language}</span></p> */}
         </Paper>
     )

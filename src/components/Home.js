@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import NavButton from "./NavButton";
 import MajorProjects from "./MajorProjects";
 import Footer from "./Footer";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { SiCodechef } from "react-icons/si";
+import { FaGithub, FaLinkedinIn, FaHackerrank } from "react-icons/fa";
 import "../App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -46,8 +45,8 @@ function Home() {
               <a href="https://www.linkedin.com/in/clarerebello-2001/" target="_blank" rel="noopener noreferrer" >
                 <FaLinkedinIn className="linkedin" />
               </a>
-              <a href="https://www.codechef.com/users/clare09" target="_blank" rel="noopener noreferrer" >
-                <SiCodechef className="codechef" />
+              <a href="https://www.hackerrank.com/clare2001" target="_blank" rel="noopener noreferrer" >
+                <FaHackerrank className="hackerrank" />
               </a>
             </div>
           </div>
