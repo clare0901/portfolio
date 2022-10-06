@@ -1,7 +1,7 @@
 import React from 'react'
 import { HashRouter as Router, Switch, Route} from 'react-router-dom'
-import About from './components/About.js';
 import Home from './components/Home.js'
+import About from './components/About.js';
 import Projects from './components/Projects.js';
 import WorkExp from './components/WorkExp.js';
 import './App.css';

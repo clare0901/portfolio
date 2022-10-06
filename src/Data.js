@@ -1,10 +1,47 @@
+import React from './images/projects/react.jpg'
+import Instagram from './images/projects/instagram.png'
+import Ecommerce from './images/projects/ecommerce.png'
+import Facial from './images/projects/facial.jpg'
+import BookRec from './images/projects/book.jpg'
+import TextSum from './images/projects/text.jpg'
+import CloudBased from './images/projects/cloud.jpg'
+
 export const Data = [
-    { "name": "login-register-template-react", "html_url": "https://github.com/clare0901/login-register-template-react", "description": "Basic Login & Register template using React and Firebase Auth.", "language": "JavaScript", "stars": 0, "forks": 0 },
-    { "name": "paint-app-react", "html_url": "https://github.com/clare0901/paint-app-react", "description": "A Paint App created using React.", "language": "JavaScript", "stars": 0, "forks": 0 },
-    { "name": "todolist-app-react", "html_url": "https://github.com/clare0901/todolist-app-react", "description": "A TodoList App made using React which has Add and Delete task functionality.", "language": "JavaScript", "stars": 0, "forks": 0 },
-    { "name": "calculator-app-react", "html_url": "https://github.com/clare0901/calculator-app-react", "description": "A basic calculator made using React wherein you can do simple math calculations.", "language": "JavaScript", "stars": 0, "forks": 0 },
-    { "name": "electronic-store-laravel", "html_url": "https://github.com/katerebello/electronic-store-laravel", "description": "Sem 5 DBMS project on electronic store management system done using Laravel.", "language": "Blade", "stars": 0, "forks": 0 },
-    { "name": "instagram-clone-laravel", "html_url": "https://github.com/katerebello/laravel_project", "description": "Sem 5 Web Development Lab project, An Instagram clone using Laravel.", "language": "PHP", "stars": 0, "forks": 0 }
+    { 
+        "name": "Cloud based Video Hosting Platform",
+        "ImgUrl" : CloudBased,
+        "GitUrl" : "https://github.com/csk18-22/Cloud-based-video-hosting-platform",
+    },
+    { 
+        "name": "Text Summarization",
+        "ImgUrl" : TextSum,
+        "GitUrl" : "",
+    },
+    { 
+        "name": "Book Reccomendation System",
+        "ImgUrl" : BookRec,
+        "GitUrl" : "https://github.com/csk18-22/book_recommendation_system",
+    },
+    { 
+        "name": "Facial Recognition",
+        "ImgUrl" : Facial,
+        "GitUrl" : "",
+    },
+    { 
+        "name": "Electronic Store",
+        "ImgUrl" : Ecommerce,
+        "GitUrl" : "https://github.com/katerebello/electronic-store-laravel",
+    },
+    { 
+        "name": "Instagram Clone",
+        "ImgUrl" : Instagram,
+        "GitUrl" : "https://github.com/katerebello/Instagram_clone_laravel",
+    },
+    { 
+        "name": "Basic React Apps",
+        "ImgUrl" : React,
+        "GitUrl" : "",
+    }
 ]
 
 export const skills = [
@@ -32,25 +69,25 @@ export const skills = [
 
 export const WorkData = [
     {
-        title: "Software Research and Development Intern at A2D Innovations Pvt. Ltd",
+        title: "System Engineer at Tata Consultancy Services",
         link: "",
-        desc: "Working on a Cloud Based Video Hosting Platform.",
-        year: "2021",
+        desc: "Under Mulesoft Training",
+        year: "2022",
         duration: "Currently"
     },
     {
+        title: "Software Research and Development Intern at A2D Innovations Pvt. Ltd",
+        link: "https://drive.google.com/file/d/1dkc_soEJARy49QUD_CHwh0Evbq3w3P0Y/view?usp=sharing",
+        desc: "Developed a Cloud Based Video Hosting Platform.",
+        year: "21-22",
+        duration: "10 Months"
+    },
+    {
         title: "ML & AI Intern at KubixSquare",
-        link: "",
+        link: "https://drive.google.com/file/d/13S_wUDcJj7EF8NDQY-3WjCgXbJSR3-J3/view?usp=sharing",
         desc: "Working on Amazon FBA product search analysis using Machine Learning.",
         year: "2021",
         duration: "02 Months"
-    },
-    {
-        title: "Technical Executive at IEEE",
-        link: "https://drive.google.com/file/d/1V0tOxK65__OEtmwTK5Shqa-Wp-jglfWI/view?usp=sharing",
-        desc: "Handled and organised the technical and non-technical events that happened in IEEE, SFIT in a team.",
-        year: "20-21",
-        duration: "1 Year"
     },
     {
         title: "PHP Developer at Shining Tomorrow Foundation",
@@ -58,5 +95,15 @@ export const WorkData = [
         desc: "During this course of internship I was alloted to work on a Track & Search App which helps people nationwide to add the details of a lost person.",
         year: "2021",
         duration: "02 Months"
+    }
+]
+
+export const VolunteeringData = [
+    {
+        title: "Technical Executive at IEEE",
+        link: "https://drive.google.com/file/d/1V0tOxK65__OEtmwTK5Shqa-Wp-jglfWI/view?usp=sharing",
+        desc: "Handled and organised the technical and non-technical events that happened in IEEE, SFIT in a team.",
+        year: "20-21",
+        duration: "1 Year"
     }
 ]

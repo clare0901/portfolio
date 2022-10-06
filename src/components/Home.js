@@ -1,14 +1,22 @@
 import React, { useEffect } from "react";
 import NavButton from "./NavButton";
-import MajorProjects from "./MajorProjects";
-import Footer from "./Footer";
 import { FaGithub, FaLinkedinIn, FaHackerrank } from "react-icons/fa";
 import "../App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import videoBG from '../assets/videoBG.mp4'
+
 
 function Home() {
+
+  let GitUrl = "https://github.com/clare0901";
+  let HackerrankUrl = "https://www.linkedin.com/in/clarerebello09/";
+  let LinkedINUrl = "https://www.hackerrank.com/clare2001";
+
   useEffect(() => {
+    // scroll to top on page load
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    // animation
     AOS.init({ duration: 1000 });
   }, []);
 
@@ -16,6 +24,8 @@ function Home() {
     <>
       <NavButton />
       <div className="home">
+        <div className="overlay"></div>
+        <video src={videoBG} autoPlay loop muted />
         <div className="main-div">
           <div>
             <p
@@ -37,23 +47,22 @@ function Home() {
               there is a will, there is a way<strong>"</strong>
             </p>
           </div>
+
           <div className="home-page-icons-div">
             <div className="home-page-icons" data-aos="flip-down">
-              <a href="https://github.com/clare0901" target="_blank" rel="noopener noreferrer" >
+              <a href={GitUrl} target="_blank" rel="noopener noreferrer" >
                 <FaGithub className="github" />
               </a>
-              <a href="https://www.linkedin.com/in/clarerebello-2001/" target="_blank" rel="noopener noreferrer" >
+              <a href={LinkedINUrl} target="_blank" rel="noopener noreferrer" >
                 <FaLinkedinIn className="linkedin" />
               </a>
-              <a href="https://www.hackerrank.com/clare2001" target="_blank" rel="noopener noreferrer" >
+              <a href={HackerrankUrl} target="_blank" rel="noopener noreferrer" >
                 <FaHackerrank className="hackerrank" />
               </a>
             </div>
           </div>
         </div>
       </div>
-      <MajorProjects />
-      <Footer />
     </>
   );
 }

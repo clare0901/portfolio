@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid } from '@material-ui/core';
 import { Link } from 'react-router-dom'
 import '../App.css'
+import { FaAngleUp } from "react-icons/fa";
 
 function Footer() {
     return (
@@ -37,15 +38,13 @@ function Footer() {
                         </li>
 
                         <li>LinkedIn &minus;
-                            <a href="https://www.linkedin.com/in/clarerebello-2001/" className="footer-link" target="_blank" rel="noopener noreferrer">
-                                https://www.linkedin.com/in/clarerebello-2001/
+                            <a href="https://www.linkedin.com/in/clarerebello09/" className="footer-link" target="_blank" rel="noopener noreferrer">
+                                https://www.linkedin.com/in/clarerebello09/
                             </a>
                         </li>
 
                         <li>Email &minus;
-                            <span className="footer-link">
-                                clarerebello0901@gmail.com
-                            </span>
+                            <button className="footer-link" onClick={() => window.location = 'mailto:clarerebello0901@gmail'}> clarerebello0901@gmail.com </button>
                         </li>
 
                         <li>Codechef &minus;
@@ -64,7 +63,12 @@ function Footer() {
 
                 <Grid item lg={12} className="grid-item">
                     <p className="copyright">&copy; 2021 Copyright Clare Rebello - clarerebello0901@gmail.com</p>
+
+                    <FaAngleUp className='scrollButton' onClick={() => {
+                        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+                    }} />
                 </Grid>
+
             </Grid>
         </>
     )

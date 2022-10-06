@@ -1,48 +1,38 @@
-import React, { useEffect, useState } from 'react'
-import ProjectCard from './ProjectCard.js';
-import '../App.css';
-import NavButton from './NavButton';
-import Footer from './Footer';
-import { makeStyles } from '@material-ui/core/styles'
-
-const useStyles = makeStyles(() => ({
-    root: {
-        display: 'flex',
-        flexWrap: 'wrap',
-        textAlign: "center",
-        justifyContent: "center",
-        boxSizing: "inherit"
-    }
-}))
+import React, { useEffect } from "react";
+import NavButton from './NavButton.js'
+import Footer from "./Footer";
+import { Paper } from '@material-ui/core';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { Data } from '../Data'
 
 function Projects() {
-    const classes = useStyles();
-    const [repo, setRepos] = useState();
-
     useEffect(() => {
-        try {
-            fetch("https://api.github.com/users/clare0901/repos")
-                .then((response => response.json()))
-                .then(response => { setRepos(response) })
-        } catch (error) {
-            console.log("Error", error)
-        }
+        // scroll to top on page load
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        AOS.init({ duration: 1000 })
     }, [])
 
     return (
         <>
-            <div className="major-projects-div">
-                <h1 className="page-title">Projects</h1>
-                <div className={classes.root} style={{overflow:"hidden"}}>
-                    {repo && repo.map((item, key) => {
-                        return (<ProjectCard value={item} key={key} />)
-                    })}
-                </div>
-            </div>
             <NavButton />
+            <div className="project-container">
+                {
+                    Data.map((item) => {
+                        return (
+                            <Paper key={item.name} elevation={5} className="project-card" data-aos='fade-up' >
+                                <a href={item.GitUrl} target="_blank" rel="noopener noreferrer">
+                                    <img src={item.ImgUrl} alt={item.name} className="project-image" />
+                                    <p className="project-name">{item.name}</p>
+                                </a>
+                            </Paper>
+                        )
+                    })
+                }
+            </div>
             <Footer />
         </>
-    );
+    )
 }
 
 export default Projects;
