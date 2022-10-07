@@ -3,7 +3,7 @@ import Instagram from './images/projects/instagram.png'
 import Ecommerce from './images/projects/ecommerce.png'
 import Facial from './images/projects/facial.jpg'
 import BookRec from './images/projects/book.jpg'
-import TextSum from './images/projects/text.jpg'
+import TextSum from './images/projects/textsum.jpg'
 import CloudBased from './images/projects/cloud.jpg'
 
 export const Data = [
