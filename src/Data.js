@@ -15,7 +15,7 @@ export const Data = [
     { 
         "name": "Text Summarization",
         "ImgUrl" : TextSum,
-        "GitUrl" : "",
+        "GitUrl" : "https://github.com/csk18-22/Text-Summarization-in-Marathi",
     },
     { 
         "name": "Book Reccomendation System",
@@ -25,7 +25,7 @@ export const Data = [
     { 
         "name": "Facial Recognition",
         "ImgUrl" : Facial,
-        "GitUrl" : "",
+        "GitUrl" : "https://github.com/csk18-22/Facial-Image-Classification-based-on-Age-Gender",
     },
     { 
         "name": "Electronic Store",
@@ -40,7 +40,7 @@ export const Data = [
     { 
         "name": "Basic React Apps",
         "ImgUrl" : React,
-        "GitUrl" : "",
+        "GitUrl" : "https://github.com/clare0901?tab=repositories&q=&type=public&language=javascript&sort=",
     }
 ]
 
